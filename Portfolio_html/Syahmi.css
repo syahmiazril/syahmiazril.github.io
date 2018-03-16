@@ -1,0 +1,82 @@
+body {
+	background-image: url(background.jpeg);
+	background-blend-mode: luminosity;
+	font-family:'Roboto Condensed';
+	color: white;
+}
+
+h1{
+	color: white;
+}
+#birthday { 
+ border: 1px solid white;
+ padding-top: 20px;
+ }
+
+ .spacing{
+ 	background-color: rgba(238, 227, 255, 0.0);
+ 	margin-right: 3px;
+ 	padding: 10px;
+ }
+
+
+.yellow-block {
+	border-radius: 9px;
+	font-family: 'Coda Caption';
+	background: url(paper.png);
+	color: black;
+	padding: 10px;
+}
+
+#aligningbio {
+	display: flex;
+	justify-content: center;
+}
+
+
+#social {
+	display: flex;
+	justify-content: center;
+}
+
+#me{
+	border-radius: 50%
+}
+
+#bordersize {
+	border: solid white;
+	width: 400px;
+}
+
+.curve {
+	border-radius: 25px
+}
+
+#mail{
+	display: flex;
+}
+
+#email{
+	font-size: 20px;
+	display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+#tel{
+	font-size: 20px;
+	display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+#phone{
+	display: flex;
+}
+
+#nav{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
