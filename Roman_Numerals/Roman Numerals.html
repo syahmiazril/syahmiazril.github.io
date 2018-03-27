@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Roman Converter</title>
+</head>
+<body>
+	<h1>Roman Numeral Converter</h1>
+	<button onclick="askNumber()">Clicky Click</button>
+	<p id = "display"></p>
+		<script>
+
+			function convert(num){
+		 		var romanNumber = "";
+		 		var originalNum = num;
+		 		var romanNumeral = {
+		 			M : 1000,
+		 			D : 500,
+		 			C : 100,
+		 			L : 50,
+		 			X : 10,
+		 			IX : 9,
+		 			VI : 6,
+		 			V : 5,
+		 			IV : 4,
+		 			I : 1,
+		 		};
+		 		var i;
+		 		for(i in romanNumeral){
+		 			if (num >= romanNumeral[i]){
+		 				console.log("i is :")
+		 				console.log(i);
+		 				romanNumber = romanNumber + i.repeat(Math.trunc(num/romanNumeral[i]));
+		 				num = num - romanNumeral[i]*Math.trunc(num/romanNumeral[i]);
+		 			}
+		 		}
+		 		console.log(originalNum);
+		 		txt = String(originalNum) + " in Roman is " + romanNumber;
+		 		return txt;
+			 }
+
+			function askNumber(){
+				var txt;
+				var num = prompt("Number Please", "0000");
+				 if (num == null || num == "") {
+        			txt = "Number Not Entered zzz";
+				}
+				 else{
+					var para = document.querySelector("#display")
+				 	para.innerHTML = convert(num);	
+	
+				 		 	
+					 }
+				 // console.log(txt);
+				 // para.appendChild =
+				 // .innerHTML = txt;
+				 }
+				</script>
+			</body>
+		</html>
+
+
+
+				 		 

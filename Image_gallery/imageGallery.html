@@ -1,0 +1,45 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<title>Image Gallery</title>
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="imageGallery.css">
+
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<ul class = 'gallery'>
+		<li class="gallery-item">
+			<img src="yosemite.jpg">
+			<p class="caption">Yosemite</p>
+		</li>
+		<li class="gallery-item">
+			<img src="waterfallsbridges.jpg">
+			<p class="caption">Waterfalls under bridge</p>
+		</li>
+		<li class="gallery-item">
+			<img src="london.jpg">
+			<p class="caption">London</p>
+		</li>
+		<li class="gallery-item">
+			<img src="waterfall.jpg">
+			<p class="caption">Waterfall</p>
+		</li>
+	</ul>
+	<div class="lightbox hidden">
+		<div class="lightbox-content">
+			<div class="nav">
+				<a href="#" class = "close"><i class="far fa-times-circle"></i></a>
+				<a href="#" class  = "previous">Previous</a>
+				<a href="#" class = "next">Next</a>
+			</div>
+			<div class="displayedLightbox">
+				<img src="yosemite.jpg">
+				<p class="lightbox-caption">Yosemite</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="imageGallery.js"></script>
+</body>	
+</html>

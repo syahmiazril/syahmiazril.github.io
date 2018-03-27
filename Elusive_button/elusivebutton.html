@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<style type="text/css">
+			.elusive{
+				position: absolute;
+				top:20px;
+    			left:20px;
+    			right:20px;
+    			bottom:20px;
+				width: 150px;
+				height:150px;
+				font-size: 30px;
+				font-variant-position: center;
+			}
+			.stoop{
+				position: fixed;
+				width: 150px;
+				height:150px;
+				font-size: 30px;
+				font-variant-position: center;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="elusive">Click Here!!</button>
+	<script type="text/javascript">
+		let hoverCount = 0
+		const button = document.getElementsByClassName('elusive')[0]
+		console.log(button)
+
+		button.onmouseover = function(){
+			console.log('hello')
+			console.log(hoverCount)
+			if(hoverCount>=10){
+				button.classList.add('stoop');
+				button.classList.remove('elusive');
+			console.log(button)
+			}
+			else{
+				button.style.top = Math.random()* 500 + 'px';
+				button.style.left = Math.random()* 1000 + 'px';
+				button.style.right = Math.random()* 1000 +'px';
+				button.style.bottom = Math.random()* 500 +'px';
+				hoverCount += 1;
+			}
+		}
+
+		button.onclick = function(){
+			document.write('Well Done!');
+		}
+
+	</script>
+</body>
+</html>
